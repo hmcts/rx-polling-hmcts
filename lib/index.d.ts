@@ -29,7 +29,7 @@ export interface IOptions {
      * Range of milli-seconds to pick a random delay between error retries if 'random'
      * strategy is used.
      */
-    randomRange?: [number, number];
+    randomRange?: [number, number] | undefined;
     /**
      * Constant time to delay error retries if 'consecutive' strategy is used
      */
@@ -44,4 +44,4 @@ export interface IOptions {
  * @param request$ Source Observable which will be ran every interval
  * @param userOptions Polling options
  */
-export default function polling<T>(request$: Observable<T>, userOptions: IOptions): Observable<T>;
+export declare function polling<T>(request$: Observable<T>, userOptions: IOptions): Observable<T>;

@@ -101,7 +101,7 @@ let subscription = polling(request$, { interval: 5000 })
 #### polling(request$, options): Observable
 
 ```javascript
-import polling from 'rx-polling';
+import { polling } from 'rx-polling';
 
 ...
 
@@ -198,7 +198,7 @@ You might need to polyfill them on older browsers.
 
 Contributions are welcome. New commits/Pull Requests must:
 
-1. Have no linter issues. Run `lint` script before committing/pushing.
+1. Have no linter issues. Run `eslint` script before committing/pushing.
 
 2. Have tests passing. Run `test` script before committing/pushing.
 
